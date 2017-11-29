@@ -73,19 +73,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Things" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9G-9O-Ccx">
+                                <rect key="frame" x="125.5" y="481" width="124" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2011" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIC-mr-CWb">
+                                <rect key="frame" x="143.5" y="531" width="88" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.66660718124800311" blue="0.50770768435630353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mIC-mr-CWb" firstAttribute="centerX" secondItem="7Ll-Sg-Igj" secondAttribute="centerX" id="DHa-nB-JDa"/>
+                            <constraint firstItem="a9G-9O-Ccx" firstAttribute="top" secondItem="xoI-G2-4Fa" secondAttribute="bottom" id="KeM-8s-k4D"/>
                             <constraint firstItem="xoI-G2-4Fa" firstAttribute="top" secondItem="1S5-Qd-3A0" secondAttribute="bottom" constant="90" id="Kkr-Ko-4Lx"/>
+                            <constraint firstItem="mIC-mr-CWb" firstAttribute="top" secondItem="a9G-9O-Ccx" secondAttribute="bottom" constant="2" id="avQ-fe-s3t"/>
                             <constraint firstItem="xoI-G2-4Fa" firstAttribute="centerX" secondItem="7Ll-Sg-Igj" secondAttribute="centerX" id="cL1-cQ-G9H"/>
                             <constraint firstItem="1S5-Qd-3A0" firstAttribute="top" secondItem="moJ-5a-VQs" secondAttribute="top" constant="40" id="eGQ-jQ-Yyt"/>
+                            <constraint firstItem="a9G-9O-Ccx" firstAttribute="centerX" secondItem="7Ll-Sg-Igj" secondAttribute="centerX" id="w05-Ho-OK6"/>
                             <constraint firstItem="1S5-Qd-3A0" firstAttribute="centerX" secondItem="7Ll-Sg-Igj" secondAttribute="centerX" id="zih-r9-KJa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="moJ-5a-VQs"/>
                     </view>
                     <connections>
+                        <outlet property="categorieLabel" destination="a9G-9O-Ccx" id="MHQ-16-nEZ"/>
                         <outlet property="definitionLabel" destination="xoI-G2-4Fa" id="Itd-zR-RNZ"/>
                         <outlet property="emojiLabel" destination="1S5-Qd-3A0" id="Wec-6E-gW9"/>
+                        <outlet property="yearLabel" destination="mIC-mr-CWb" id="OZo-Er-INf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGr-dd-uVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
